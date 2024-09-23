@@ -1,0 +1,15 @@
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/bin/Debug/net8.0/FinanceApplication.Core.deps.json
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/bin/Debug/net8.0/FinanceApplication.Core.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/bin/Debug/net8.0/FinanceApplication.Core.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/bin/Debug/net8.0/FinanceApplication.Entities.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/bin/Debug/net8.0/FinanceApplication.Entities.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.csproj.AssemblyReference.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.AssemblyInfoInputs.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.AssemblyInfo.cs
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.csproj.CoreCompileInputs.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.csproj.CopyComplete
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/refint/FinanceApplication.Core.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/ref/FinanceApplication.Core.dll

@@ -1,0 +1,38 @@
+﻿services:
+  finance-app.api:
+    image: finance-app.api
+    build:
+      context: .
+      dockerfile: FinanceApplication.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5002
+    ports:
+      - "5002:5002"
+    depends_on:
+      - finance-app.database
+    networks:
+      - finance-app-network
+    
+  finance-app.database:
+    image: postgres:latest
+    container_name: finance-app.database
+    environment:
+      POSTGRES_PASSWORD: finance
+      POSTGRES_USER: sa
+      POSTGRES_DB: FinanceDb
+    volumes:
+      - ./.containers/finance-db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - finance-app-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U sa" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      
+networks:
+  finance-app-network:
+    driver: bridge

@@ -1,0 +1,17 @@
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Dal.deps.json
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Dal.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Dal.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Core.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Entities.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Core.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/bin/Debug/net8.0/FinanceApplication.Entities.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.csproj.AssemblyReference.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.AssemblyInfoInputs.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.AssemblyInfo.cs
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.csproj.CoreCompileInputs.cache
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.csproj.CopyComplete
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/refint/FinanceApplication.Dal.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.pdb
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/ref/FinanceApplication.Dal.dll

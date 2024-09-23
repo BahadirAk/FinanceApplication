@@ -1,0 +1,281 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/FinanceApplication.Business.csproj": {}
+  },
+  "projects": {
+    "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/FinanceApplication.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/FinanceApplication.Business.csproj",
+        "projectName": "FinanceApplication.Business",
+        "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/FinanceApplication.Business.csproj",
+        "packagesPath": "/Users/bahad/.nuget/packages/",
+        "outputPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bahad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj": {
+                "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj"
+              },
+              "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/FinanceApplication.Dal.csproj": {
+                "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/FinanceApplication.Dal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj",
+        "projectName": "FinanceApplication.Core",
+        "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj",
+        "packagesPath": "/Users/bahad/.nuget/packages/",
+        "outputPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bahad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/FinanceApplication.Entities.csproj": {
+                "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/FinanceApplication.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/FinanceApplication.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/FinanceApplication.Dal.csproj",
+        "projectName": "FinanceApplication.Dal",
+        "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/FinanceApplication.Dal.csproj",
+        "packagesPath": "/Users/bahad/.nuget/packages/",
+        "outputPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bahad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj": {
+                "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/FinanceApplication.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/FinanceApplication.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/FinanceApplication.Entities.csproj",
+        "projectName": "FinanceApplication.Entities",
+        "projectPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/FinanceApplication.Entities.csproj",
+        "packagesPath": "/Users/bahad/.nuget/packages/",
+        "outputPath": "/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bahad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
