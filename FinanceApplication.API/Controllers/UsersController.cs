@@ -3,6 +3,7 @@ using FinanceApplication.Entities.Dto.User;
 using FinanceApplication.Entities.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace FinanceApplication.API.Controllers;
 
@@ -16,6 +17,7 @@ public class UsersController : ControllerBase
         _usersService = usersService;
     }
     
+    [SwaggerOperation(Summary = "Kullanıcıları listeler.", Description = "Admin yetkisine sahip kişi sistemdeki kullanıcıları görüntüler.")]
     [Authorize(Roles = "1")]
     [HttpGet("getusers")]
     public IActionResult Get()
@@ -24,6 +26,7 @@ public class UsersController : ControllerBase
         return StatusCode(result.HttpStatusCode, result);
     }
 
+    [SwaggerOperation(Summary = "Alıcı ekleme.", Description = "Admin yetkisine sahip kişi sisteme alıcı ekler.")]
     [Authorize(Roles = "1")]
     [HttpPost("addbuyer")]
     public IActionResult AddBuyer(UserCreateDto userCreateDto)
@@ -34,6 +37,7 @@ public class UsersController : ControllerBase
         return StatusCode(result.HttpStatusCode, result);
     }
     
+    [SwaggerOperation(Summary = "Tedarikçi ekleme.", Description = "Admin yetkisine sahip kişi sisteme tedarikçi ekler.")]
     [Authorize(Roles = "1")]
     [HttpPost("addsupplier")]
     public IActionResult AddSupplier(UserCreateDto userCreateDto)
@@ -44,7 +48,9 @@ public class UsersController : ControllerBase
         return StatusCode(result.HttpStatusCode, result);
     }
 
-    [Authorize(Roles = "2,3,4")]
+
+    [SwaggerOperation(Summary = "Bildirim listeleme.", Description = "Alıcı ve tedarikçi yetkilerine sahip kişiler kendilerine ait bildirimleri görüntüleyebilirler.")]
+    [Authorize(Roles = "2,3")]
     [HttpGet("notifications")]
     public IActionResult GetUserNotifications()
     {

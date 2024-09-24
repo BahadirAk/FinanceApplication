@@ -2,6 +2,7 @@ using FinanceApplication.Business.Abstract;
 using FinanceApplication.Entities.Dto.Invoice;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace FinanceApplication.API.Controllers;
 
@@ -16,11 +17,21 @@ public class InvoiceController : ControllerBase
         _invoiceService = invoiceService;
     }
 
+    [SwaggerOperation(Summary = "Fatura ekleme.", Description = "Alıcı yetkisine sahip kişi sisteme faturalarını ekler.")]
     [Authorize(Roles = "2")]
     [HttpPost]
     public IActionResult AddInvoice(List<AddInvoiceDto> addInvoiceDto)
     {
         var result = _invoiceService.Add(addInvoiceDto);
+        return StatusCode(result.HttpStatusCode, result);
+    }
+
+    [SwaggerOperation(Summary = "Fatura listeleme.", Description = "Tedarikçi yetkisine sahip kişi kendisine atanan faturaları görüntüler.")]
+    [Authorize(Roles = "3")]
+    [HttpGet]
+    public IActionResult GetList()
+    {
+        var result = _invoiceService.GetList();
         return StatusCode(result.HttpStatusCode, result);
     }
 }

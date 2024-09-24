@@ -9,3 +9,4 @@
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/obj/Debug/net8.0/refint/FinanceApplication.Entities.dll
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/obj/Debug/net8.0/FinanceApplication.Entities.pdb
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/obj/Debug/net8.0/ref/FinanceApplication.Entities.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Entities/obj/Debug/net8.0/FinanceApplication.Entities.sourcelink.json

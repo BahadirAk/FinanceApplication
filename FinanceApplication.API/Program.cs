@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.Json.Serialization;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using FinanceApplication.API.Extensions;
@@ -21,7 +22,10 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
         builder.RegisterModule(new AutofacBusinessModule());
     });
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(o =>
+{
+    o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+});
 
 builder.Services.AddDbContext<FinanceAppDbContext>();
 

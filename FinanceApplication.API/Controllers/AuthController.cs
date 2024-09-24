@@ -1,9 +1,8 @@
-using System.Net;
 using FinanceApplication.Business.Abstract;
-using FinanceApplication.Core.Result;
 using FinanceApplication.Entities.Dto.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace FinanceApplication.API.Controllers;
 
@@ -18,6 +17,7 @@ public class AuthController : ControllerBase
         _authService = authService;
     }
     
+    [SwaggerOperation(Summary = "Giriş yap.", Description = "Kullanıcı vergi numarasını ve şifresini girerek sisteme giriş yapar.")]
     [AllowAnonymous]
     [HttpPost("login")]
     public IActionResult Login(LoginDto loginDto)

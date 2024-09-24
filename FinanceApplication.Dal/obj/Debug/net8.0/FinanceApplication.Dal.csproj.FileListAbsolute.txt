@@ -15,3 +15,4 @@
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/refint/FinanceApplication.Dal.dll
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.pdb
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/ref/FinanceApplication.Dal.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Dal/obj/Debug/net8.0/FinanceApplication.Dal.sourcelink.json

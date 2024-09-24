@@ -28,6 +28,9 @@ public class InvoiceManager : IInvoiceService
     {
         try
         {
+            var result = addInvoiceDtos.GroupBy(a => a.InvoiceNumber);
+            if (result.Any(r => r.Count() > 1)) return new ErrorDataResult<bool>(false, Messages.SameInvoiceNumber);
+            
             var invoiceCheck =
                 addInvoiceDtos.Where(x => _invoiceDal.Get(i => i.InvoiceNumber == x.InvoiceNumber) != null).ToList();
 
@@ -90,6 +93,63 @@ public class InvoiceManager : IInvoiceService
 
     public IDataResult<List<InvoiceDto>> GetList(Expression<Func<Invoice, bool>> expression = null)
     {
-        throw new NotImplementedException();
+        try
+        {
+            var taxId = UserIdentityHelper.GetUserTaxId();
+
+            var invoices = _invoiceDal.GetList(i => i.SupplierTaxId == taxId && i.Status == (byte)StatusEnum.Active);
+
+            var invoiceList = new List<InvoiceDto>();
+            foreach (var invoice in invoices)
+            {
+                invoiceList.Add(new InvoiceDto
+                {
+                    Id = invoice.Id,
+                    InvoiceNumber = invoice.InvoiceNumber,
+                    BuyerTaxId = invoice.BuyerTaxId,
+                    SupplierTaxId = invoice.SupplierTaxId,
+                    InvoiceCost = invoice.InvoiceCost,
+                    InvoiceStatus = invoice.InvoiceStatus,
+                    TermDate = invoice.TermDate,
+                    CreatedDate = invoice.CreatedDate,
+                    UpdatedDate = invoice.UpdatedDate,
+                    DeletedDate = invoice.DeletedDate,
+                    Status = invoice.Status
+                });
+            }
+            return new SuccessDataResult<List<InvoiceDto>>(invoiceList, Messages.Success);
+        }
+        catch (Exception ex)
+        {
+            return new ErrorDataResult<List<InvoiceDto>>(new(), ex.Message);
+        }
+    }
+
+    public IDataResult<Invoice> Get(Expression<Func<Invoice, bool>> expression)
+    {
+        try
+        {
+            var invoice = _invoiceDal.Get(expression);
+            if (invoice == null) return new ErrorDataResult<Invoice>(null, Messages.DataNotFound);
+            
+            return new SuccessDataResult<Invoice>(invoice);
+        }
+        catch (Exception ex)
+        {
+            return new ErrorDataResult<Invoice>(null, ex.Message);
+        }
+    }
+
+    public IDataResult<bool> Update(Invoice invoice)
+    {
+        try
+        {
+            _invoiceDal.Update(invoice);
+            return new SuccessDataResult<bool>(true, Messages.Success);
+        }
+        catch (Exception ex)
+        {
+            return new ErrorDataResult<bool>(false, ex.Message);
+        }
     }
 }

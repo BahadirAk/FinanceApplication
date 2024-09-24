@@ -17,3 +17,4 @@
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/obj/Debug/net8.0/refint/FinanceApplication.Business.dll
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/obj/Debug/net8.0/FinanceApplication.Business.pdb
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/obj/Debug/net8.0/ref/FinanceApplication.Business.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Business/obj/Debug/net8.0/FinanceApplication.Business.sourcelink.json

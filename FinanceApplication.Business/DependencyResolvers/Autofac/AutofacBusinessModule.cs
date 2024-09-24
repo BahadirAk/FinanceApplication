@@ -22,5 +22,8 @@ public class AutofacBusinessModule : Module
 
         builder.RegisterType<NotificationManager>().As<INotificationService>();
         builder.RegisterType<EfNotificationDal>().As<INotificationDal>();
+        
+        builder.RegisterType<RequestManager>().As<IRequestService>();
+        builder.RegisterType<EfRequestDal>().As<IRequestDal>();
     }
 }

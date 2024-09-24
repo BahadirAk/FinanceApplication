@@ -7,7 +7,7 @@ public class FinanceAppDbContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=FinanceDb;Username=sa;Password=finance;Include Error Detail=true");
+        optionsBuilder.UseNpgsql("Host=finance-app.database;Port=5432;Database=FinanceDb;Username=sa;Password=finance;Include Error Detail=true");
     }
     
     public DbSet<Invoice> Invoices { get; set; }

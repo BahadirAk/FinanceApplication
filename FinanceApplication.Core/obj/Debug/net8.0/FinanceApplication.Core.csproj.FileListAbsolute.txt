@@ -13,3 +13,4 @@
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/refint/FinanceApplication.Core.dll
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.pdb
 /Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/ref/FinanceApplication.Core.dll
+/Users/bahad/repos/FinancialChainFinanceApplication/FinanceApplication/FinanceApplication.Core/obj/Debug/net8.0/FinanceApplication.Core.sourcelink.json
