@@ -18,4 +18,5 @@ public static class Messages
     public static string BuyerRequest = "{0} numaralı faturanız kullanılmıştır. Yakın zamanda ödemeniz gerçekleşecektir.";
     public static string ApprovedRequestSupplier = "{0} numaralı faturanız için açıtığınız talep onaylanmıştır.";
     public static string ApprovedRequestBuyer = "{0} numaralı faturanız için ödemeniz gerçekleşmiştir.";
+    public static string BackoutStatusError = "Faturanız kullanıldığı veya ödemesi gerçekleştiği için iptal edemezsiniz.";
 }

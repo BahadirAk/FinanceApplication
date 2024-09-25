@@ -11,4 +11,5 @@ public interface IInvoiceService
     IDataResult<List<InvoiceDto>> GetList(Expression<Func<Invoice, bool>> expression = null);
     IDataResult<Invoice> Get(Expression<Func<Invoice, bool>> expression);
     IDataResult<bool> Update(Invoice invoice);
+    IDataResult<bool> Backout(string invoiceNumber);
 }

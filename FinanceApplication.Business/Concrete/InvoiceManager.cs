@@ -152,4 +152,24 @@ public class InvoiceManager : IInvoiceService
             return new ErrorDataResult<bool>(false, ex.Message);
         }
     }
+
+    public IDataResult<bool> Backout(string invoiceNumber)
+    {
+        try
+        {
+            var invoice = _invoiceDal.Get(i => i.InvoiceNumber == invoiceNumber);
+            if (invoice == null) return new ErrorDataResult<bool>(false, Messages.DataNotFound);
+
+            if (invoice.InvoiceStatus != (byte)InvoiceStatusEnum.New)
+                return new ErrorDataResult<bool>(false, Messages.BackoutStatusError);
+
+            invoice.Status = (byte)StatusEnum.Passive;
+            _invoiceDal.Update(invoice);
+            return new SuccessDataResult<bool>(true, Messages.Success);
+        }
+        catch (Exception ex)
+        {
+            return new ErrorDataResult<bool>(false, ex.Message);
+        }
+    }
 }

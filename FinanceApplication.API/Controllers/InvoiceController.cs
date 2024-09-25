@@ -34,4 +34,13 @@ public class InvoiceController : ControllerBase
         var result = _invoiceService.GetList();
         return StatusCode(result.HttpStatusCode, result);
     }
+
+    [SwaggerOperation(Summary = "Fatura iptal.", Description = "Alıcı yetkisine sahip kişi faturasını iptal eder.")]
+    [Authorize(Roles = "2")]
+    [HttpPut]
+    public IActionResult Backout([FromQuery]string invoiceNumber)
+    {
+        var result = _invoiceService.Backout(invoiceNumber);
+        return StatusCode(result.HttpStatusCode, result);
+    }
 }
