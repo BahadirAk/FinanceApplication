@@ -30,7 +30,7 @@ public static class UserIdentityHelper
     
     public static string GetUserTaxId()
     {
-        return _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        return _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.UserData)?.Value;
     }
 
     public static byte GetUserRoleId()
